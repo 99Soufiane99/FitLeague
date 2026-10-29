@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
-    <header>
-        <a href="dashboard.html" >FitLeague</a>
-        <nav>
-         <a>accueil</a>
-        <a>fonctionalites</a>
-        <a>apropos</a>
+    <header class="flex justify-between items-center p-4">
+        <a href="dashboard.html" class="flex items-end gap-1" >
+            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
+            <span class="flex font-bold text-xl">itLeague</span>
+        </a>
+        <nav class="flex gap-20">
+         <a class="hover:text-green-800" >accueil</a>
+        <a class="hover:text-green-800">fonctionalites</a>
+        <a class="hover:text-green-800">apropos</a>
         </nav>
-        <button>Accueil</button>
+        <button class="flex rounded-[10px] bg-green-700 h-10 w-20 items-center justify-center text-white font-bold">Accueil</button>
     </header>
-    <main id="dashboard-bady">
-        <section id="dashboard-1">
-            <p>ESPACE SPORTIF</p>
-            <h1>Dashboard</h1>
-            <p>Voici un aperçu de l'activité de ton groupe</p>
-            <button>+ cree un defi</button>
+    <main id="dashboard-bady" class="bg-green-50">
+        <section id="dashboard-1" class="">
+            <p class="text-green-800 font-bold text-xl p-2">ESPACE SPORTIF</p>
+            <h1 class="font-bold text-6xl">Dashboard</h1>
+            <p class="flex p-3">Voici un aperçu de l'activité de ton groupe</p>
+            <button class="flex rounded-[10px] justify-center items-center bg-green-700 h-10 w-30 text-white font-bold ">+ cree un defi</button>
         </section>
         <section id="dashboard-statistique">
                 <div id="nombre-defi">
@@ -59,7 +64,10 @@
                 </section>
     </main>
     <footer>
-        <a href="dashboard.html" >FitLeague</a>
+        <a href="dashboard.html" class="flex items-end gap-1" >
+            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
+            <span class="flex font-bold text-xl">itLeague</span>
+        </a>
         <p>Le plaisir de progresser ensemble.</p>
         <p>© 2026 FitLeague</p>
     </footer>
