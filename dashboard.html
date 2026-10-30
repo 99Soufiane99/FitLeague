@@ -7,63 +7,69 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
-    <header class="flex justify-between items-center p-4">
+<body class="bg-green-50">
+    <header class="flex justify-between items-center p-4 bg-white">
         <a href="dashboard.html" class="flex items-end gap-1" >
             <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
             <span class="flex font-bold text-xl">itLeague</span>
         </a>
         <nav class="flex gap-20">
-         <a class="hover:text-green-800" >accueil</a>
+         <a class="hover:text-green-800" >Dashboard</a>
         <a class="hover:text-green-800">fonctionalites</a>
         <a class="hover:text-green-800">apropos</a>
         </nav>
         <button class="flex rounded-[10px] bg-green-700 h-10 w-20 items-center justify-center text-white font-bold">Accueil</button>
     </header>
-    <main id="dashboard-bady" class="bg-green-50">
-        <section id="dashboard-1" class="">
-            <p class="text-green-800 font-bold text-xl p-2">ESPACE SPORTIF</p>
-            <h1 class="font-bold text-6xl">Dashboard</h1>
-            <p class="flex p-3">Voici un aperçu de l'activité de ton groupe</p>
-            <button class="flex rounded-[10px] justify-center items-center bg-green-700 h-10 w-30 text-white font-bold ">+ cree un defi</button>
-        </section>
-        <section id="dashboard-statistique">
-                <div id="nombre-defi">
-                    <p>Total des défis</p>
-                    <p>0</p>
-                    <p>Défis créés</p>
+    <main id="dashboard-bady">
+        <section id="dashboard-1" class="p-4 flex p-5 justify-between">
+            <div>
+                <p class="text-green-800 font-bold text-xl p-2">ESPACE SPORTIF</p>
+                <h1 class="font-bold text-3xl">Dashboard</h1>
+                <p class="p-3">Voici un aperçu de l'activité de ton groupe</p>
                 </div>
-                    <div id="participants">
-                        <p>participants</p>
-                        <p>0</p>
-                        <p>Membres du groupe</p>
+            
+                <button class="rounded-[10px] justify-center items-center bg-green-700 h-10 w-30 text-white font-bold self-center flex-row">+ cree un defi</button>
+                
+            </section>
+        <section id="dashboard-statistique" class="flex justify-around gap-6 p-10">
+                <div id="nombre-defi" class="flex-1 rounded-xl bg-white p-6">
+                    <p class="text-gray-500 font-bold text-[25px]">Total des défis</p>
+                    <p class="text-[50px]">0</p>
+                    <p class="text-gray-500 text-[18]">Défis créés</p>
+                </div>
+                    <div id="participants" class="flex-1 rounded-xl bg-white p-6">
+                        <p class="text-gray-500 font-bold text-[25px]">participants</p>
+                        <p class="text-[50px]">0</p>
+                        <p class="text-gray-500 text-[18]">Membres du groupe</p>
                     </div>
-                            <div id="defi-actifs">
-                                <p>Défis actifs</p>
-                                <p>0</p>
-                                <p>En cours actuellement</p>
+                            <div id="defi-actifs" class="flex-1 rounded-xl bg-white p-6">
+                                <p class="text-gray-500 font-bold text-[25px]">Défis actifs</p>
+                                <p class="text-[50px]">0</p>
+                                <p class="text-gray-500 text-[18]">En cours actuellement</p>
                             </div>
         </section>
+
         <section>
-            <h2>Défis récents</h2>
-            <p>Voici un aperçu de l'activité de ton groupe</p>
+            <h2 class="font-bold text-3xl">Défis récents</h2>
+            <p>Les derniers objectifs lancés par votre équipe</p>
         </section>
-        <section id="defi-section">
-            <p>+</p>
-            <h3>Aucun défi pour le moment</h3>
+        <section id="defi-section" class="bg-white flex flex-col items-center p-5">
+            <p class="flex h-10 w-10 bg-green-200 rounded-xl font-bold text-[30px] items-center justify-center">+</p>
+            <h3 class="text-[30px]">Aucun défi pour le moment</h3>
             <p>Crée ton premier défi sportif pour commencer
                 à suivre les progrès du groupe.</p>
-                <button>cree un defi</button>
+                <button class="h-10 w-30 bg-green-700 font-bold items-center justify-center rounded-xl text-white">cree un defi</button>
         </section>
         <section id="tp-ranking">
-            <h2>Meilleures performances</h2>
+            <h2 class="font-bold text-3xl p-5">Meilleures performances</h2>
             <p>Les meilleurs résultats apparaîtront ici</p>
         </section>
-                <section id="resulta-partisipent">
-                    
+                <section id="resulta-partisipent" class="p-5">
+                    <p class="bg-white h-50">Ajoute des participants et enregistre leurs performances pour
+                        afficher les résultats.</p>
                 </section>
     </main>
-    <footer>
+    <footer class="flex justify-between items-center p-4 bg-white">
         <a href="dashboard.html" class="flex items-end gap-1" >
             <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
             <span class="flex font-bold text-xl">itLeague</span>
