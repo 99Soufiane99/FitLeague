@@ -1,81 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
-<body class="bg-green-50">
-    <header class="flex justify-between items-center p-4 bg-white">
-        <a href="dashboard.html" class="flex items-end gap-1" >
-            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
-            <span class="flex font-bold text-xl">itLeague</span>
+
+<body class="bg-gray-50">
+
+    <!-- HEADER -->
+    <header class="flex justify-between items-center px-9 py-4 bg-white">
+
+        <a href="dashboard.html" class="flex items-center gap-2">
+            <span class="flex rounded-lg items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-xl">
+                F
+            </span>
+            <span class="font-bold text-xl">itLeague</span>
         </a>
-        <nav class="flex gap-20">
-         <a class="hover:text-green-800" >Dashboard</a>
-        <a class="hover:text-green-800">fonctionalites</a>
-        <a class="hover:text-green-800">apropos</a>
+
+        <nav class="flex gap-7 text-gray-500 text-sm">
+            <a href="dashboard.html" class="text-green-800 underline">Dashboard</a>
+            <a href="#" class="hover:text-green-800">Défis</a>
+            <a href="#" class="hover:text-green-800">Participants</a>
         </nav>
-        <button class="flex rounded-[10px] bg-green-700 h-10 w-20 items-center justify-center text-white font-bold">Accueil</button>
+
+        <button class="rounded-lg bg-green-700 h-10 px-5 text-white font-bold hover:bg-green-800">
+            Accueil
+        </button>
+
     </header>
-    <main id="dashboard-bady">
-        <section id="dashboard-1" class="p-4 flex p-5 justify-between">
+
+
+    <main class="bg-green-50 px-9 py-6 min-h-[840px]">
+
+        <!-- SECTION 1 : TITRE -->
+        <section class="flex justify-between items-center mb-7">
+
             <div>
-                <p class="text-green-800 font-bold text-xl p-2">ESPACE SPORTIF</p>
-                <h1 class="font-bold text-3xl">Dashboard</h1>
-                <p class="p-3">Voici un aperçu de l'activité de ton groupe</p>
-                </div>
-            
-                <button class="rounded-[10px] justify-center items-center bg-green-700 h-10 w-30 text-white font-bold self-center flex-row">+ cree un defi</button>
-                
-            </section>
-        <section id="dashboard-statistique" class="flex justify-around gap-6 p-10">
-                <div id="nombre-defi" class="flex-1 rounded-xl bg-white p-6">
-                    <p class="text-gray-500 font-bold text-[25px]">Total des défis</p>
-                    <p class="text-[50px]">0</p>
-                    <p class="text-gray-500 text-[18]">Défis créés</p>
-                </div>
-                    <div id="participants" class="flex-1 rounded-xl bg-white p-6">
-                        <p class="text-gray-500 font-bold text-[25px]">participants</p>
-                        <p class="text-[50px]">0</p>
-                        <p class="text-gray-500 text-[18]">Membres du groupe</p>
-                    </div>
-                            <div id="defi-actifs" class="flex-1 rounded-xl bg-white p-6">
-                                <p class="text-gray-500 font-bold text-[25px]">Défis actifs</p>
-                                <p class="text-[50px]">0</p>
-                                <p class="text-gray-500 text-[18]">En cours actuellement</p>
-                            </div>
+                <p class="text-green-700 font-bold text-sm mb-2">
+                    ESPACE SPORTIF
+                </p>
+
+                <h1 class="font-bold text-3xl text-gray-800">
+                    Dashboard
+                </h1>
+
+                <p class="mt-2 text-gray-700">
+                    Voici un aperçu de l'activité de ton groupe
+                </p>
+            </div>
+
+            <button class="rounded-lg bg-green-700 h-9 px-4 text-white font-bold text-sm hover:bg-green-800">
+                + créer un défi
+            </button>
+
         </section>
 
-        <section>
-            <h2 class="font-bold text-3xl">Défis récents</h2>
-            <p>Les derniers objectifs lancés par votre équipe</p>
+
+        <!-- SECTION 2 : STATISTIQUES -->
+        <section id="dashboard-statistique" class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+
+            <div id="nombre-defi" class="rounded-xl bg-white p-5">
+                <p class="text-gray-500 font-bold text-base">
+                    Total des défis
+                </p>
+
+                <p class="text-4xl font-bold text-gray-800 mt-2">
+                    3
+                </p>
+
+                <p class="text-gray-500 mt-2 text-sm">
+                    Défis créés
+                </p>
+            </div>
+
+
+            <div id="participants" class="rounded-xl bg-white p-5">
+                <p class="text-gray-500 font-bold text-base">
+                    Participants
+                </p>
+
+                <p class="text-4xl font-bold text-gray-800 mt-2">
+                    5
+                </p>
+
+                <p class="text-gray-500 mt-2 text-sm">
+                    Membres du groupe
+                </p>
+            </div>
+
+
+            <div id="defi-actifs" class="rounded-xl bg-white p-5">
+                <p class="text-gray-500 font-bold text-base">
+                    Défis actifs
+                </p>
+
+                <p class="text-4xl font-bold text-gray-800 mt-2">
+                    2
+                </p>
+
+                <p class="text-gray-500 mt-2 text-sm">
+                    En cours actuellement
+                </p>
+            </div>
+
         </section>
-        <section id="defi-section" class="bg-white flex flex-col items-center p-5">
-            <p class="flex h-10 w-10 bg-green-200 rounded-xl font-bold text-[30px] items-center justify-center">+</p>
-            <h3 class="text-[30px]">Aucun défi pour le moment</h3>
-            <p>Crée ton premier défi sportif pour commencer
-                à suivre les progrès du groupe.</p>
-                <button class="h-10 w-30 bg-green-700 font-bold items-center justify-center rounded-xl text-white">cree un defi</button>
+
+
+        <!-- SECTION 3 : DEFIS RECENTS -->
+        <section class="  defi-section mb-8">
+
+            <h2 class="font-bold text-2xl text-gray-800">
+                Défis récents
+            </h2>
+
+            <p class="text-gray-500 text-sm">
+                Les derniers objectifs lancés par votre équipe
+            </p>
+
+
+            <div id="defi-section" class="flex flex-col gap-3 mt-1">
+
+                <!-- Défi 1 -->
+                <div class="flex justify-between items-center bg-white rounded-xl px-5 py-4">
+
+                    <div>
+                        <h3 class="font-bold text-sm text-gray-800">
+                            100km en octobre
+                        </h3>
+
+                        <p class="text-gray-500 text-xs mt-1">
+                            Course à pied · objectif 100 km · 3 participants
+                        </p>
+                    </div>
+
+                    <span class="bg-green-50 text-green-700 rounded-full px-3 py-1 text-xs font-bold">
+                        actif
+                    </span>
+
+                </div>
+
+
+                <!-- Défi 2 -->
+                <div class="flex justify-between items-center bg-white rounded-xl px-5 py-4">
+
+                    <div>
+                        <h3 class="font-bold text-sm text-gray-800">
+                            21 jours de yoga
+                        </h3>
+
+                        <p class="text-gray-500 text-xs mt-1">
+                            Yoga · objectif 21 séances · 2 participants
+                        </p>
+                    </div>
+
+                    <span class="bg-green-50 text-green-700 rounded-full px-3 py-1 text-xs font-bold">
+                        actif
+                    </span>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+        <!-- SECTION 4 : MEILLEURES PERFORMANCES -->
         <section id="tp-ranking">
-            <h2 class="font-bold text-3xl p-5">Meilleures performances</h2>
-            <p>Les meilleurs résultats apparaîtront ici</p>
+
+            <h2 class="font-bold text-2xl text-gray-800">
+                Meilleures performances
+            </h2>
+
+            <p class="text-gray-500 text-sm">
+                Les meilleurs résultats apparaissent ici
+            </p>
+
+
+            <div id="resulta-partisipent" class="bg-white rounded-xl px-2 py-1 mt-1">
+
+                <!-- Participant 1 -->
+                <div class="flex justify-between items-center p-3 border-b border-gray-100">
+
+                    <div class="flex items-center gap-3">
+
+                        <span class="flex items-center justify-center h-6 w-6 rounded-full bg-yellow-100 text-yellow-700 text-xs font-bold">
+                            1
+                        </span>
+
+                        <div>
+                            <h3 class="font-bold text-xs text-gray-800">
+                                Yassine Amrani
+                            </h3>
+
+                            <p class="text-gray-500 text-xs">
+                                100km en octobre
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="font-bold text-base text-gray-800">
+                        58 km
+                    </p>
+
+                </div>
+
+
+                <!-- Participant 2 -->
+                <div class="flex justify-between items-center p-3 border-b border-gray-100">
+
+                    <div class="flex items-center gap-3">
+
+                        <span class="flex items-center justify-center h-6 w-6 rounded-full bg-gray-100 text-gray-500 text-xs font-bold">
+                            2
+                        </span>
+
+                        <div>
+                            <h3 class="font-bold text-xs text-gray-800">
+                                Sara Benali
+                            </h3>
+
+                            <p class="text-gray-500 text-xs">
+                                100km en octobre
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="font-bold text-base text-gray-800">
+                        42 km
+                    </p>
+
+                </div>
+
+
+                <!-- Participant 3 -->
+                <div class="flex justify-between items-center p-3">
+
+                    <div class="flex items-center gap-3">
+
+                        <span class="flex items-center justify-center h-6 w-6 rounded-full bg-orange-100 text-orange-700 text-xs font-bold">
+                            3
+                        </span>
+
+                        <div>
+                            <h3 class="font-bold text-xs text-gray-800">
+                                Nadia Chraibi
+                            </h3>
+
+                            <p class="text-gray-500 text-xs">
+                                21 jours de yoga
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="font-bold text-base text-gray-800">
+                        14 séances
+                    </p>
+
+                </div>
+
+            </div>
+
         </section>
-                <section id="resulta-partisipent" class="p-5">
-                    <p class="bg-white h-50">Ajoute des participants et enregistre leurs performances pour
-                        afficher les résultats.</p>
-                </section>
+
     </main>
-    <footer class="flex justify-between items-center p-4 bg-white">
-        <a href="dashboard.html" class="flex items-end gap-1" >
-            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
-            <span class="flex font-bold text-xl">itLeague</span>
+
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center px-9 py-8 bg-white">
+
+        <a href="dashboard.html" class="flex items-center gap-2">
+            <span class="flex rounded-lg items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-xl">
+                F
+            </span>
+
+            <span class="font-bold text-xl">
+                itLeague
+            </span>
         </a>
-        <p>Le plaisir de progresser ensemble.</p>
-        <p>© 2026 FitLeague</p>
+
+        <p class="text-gray-500 text-sm">
+            Le plaisir de progresser ensemble.
+        </p>
+
+        <p class="text-gray-500 text-sm">
+            © 2026 FitLeague
+        </p>
+
     </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+
 </body>
 </html>
