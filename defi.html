@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+        <header class="flex justify-between items-center p-4 bg-white">
+        <a href="dashboard.html" class="flex items-end gap-1" >
+            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
+            <span class="flex font-bold text-xl">itLeague</span>
+        </a>
+        <nav class="flex gap-20">
+         <a class="hover:text-green-800" >Dashboard</a>
+        <a class="hover:text-green-800">fonctionalites</a>
+        <a class="hover:text-green-800">apropos</a>
+        </nav>
+        <button class="flex rounded-[10px] bg-green-700 h-10 w-20 items-center justify-center text-white font-bold">Accueil</button>
+    </header>
+
+      <main class="max-w-5xl mx-auto px-4 py-10">
+
+    <h1 class="font-bold text-3xl">Les défis</h1>
+    <p class="text-gray-500 mt-1 mb-6 text-sm">Recherche, filtre et trie les défis du groupe.</p>
+
+    <section aria-label="Filtres des défis" class="bg-white border border-gray-200 rounded-xl p-4 flex flex-wrap gap-3 mb-8">
+        <input type="text" placeholder="Rechercher un défi par titre…" class="flex-1 min-w-[200px] border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+        <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+            <option>Tous les sports</option>
+            <option>Course à pied</option>
+            <option>Yoga</option>
+        </select>
+                <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <option>Tous les statuts</option>
+                    <option>Actif</option>
+                    <option>Terminé</option>
+                </select>
+      <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+        <option>Date limite ↑</option>
+        <option>Date limite ↓</option>
+      </select>
+    </section>
+
+    <section aria-label="Liste des défis" class="flex flex-col gap-4">
+
+      <article class="bg-white border border-gray-200 rounded-xl p-5">
+        <div class="flex justify-between items-start flex-wrap gap-3">
+        <div>
+        <div class="flex items-center gap-2 mb-1 flex-wrap">
+                    <a href="defi-details.html" class="font-bold text-lg hover:underline">21 jours de yoga</a>
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-700">Yoga</span>
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">actif</span>
+            </div>
+            <p class="text-sm text-gray-500">Une séance de yoga par jour pendant 21 jours pour tenir une routine.</p>
+            <p class="text-sm text-gray-500 mt-1">Objectif : 21 séances · échéance 07 nov. 2026 · 5 participant(s)</p>
+          </div>
+            <div class="flex gap-2 shrink-0">
+                <a href="defi-details.html" class="border border-gray-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Ouvrir</a>
+                <a href="defi-modifier.html" class="border border-gray-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Modifier</a>
+                <button class="border border-red-200 text-red-600 text-sm font-medium px-3 py-2 rounded-lg hover:bg-red-50">Supprimer</button>
+            </div>
+            </div>
+      </article>
+
+      <article class="bg-white border border-gray-200 rounded-xl p-5">
+        <div class="flex justify-between items-start flex-wrap gap-3">
+          <div>
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                <a href="defi-details.html" class="font-bold text-lg hover:underline">100km en octobre</a>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-700">Course à pied</span>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">actif</span>
+            </div>
+            <p class="text-sm text-gray-500">Cumuler 100 km de course avant la fin du mois, chacun à son rythme.</p>
+            <p class="text-sm text-gray-500 mt-1">Objectif : 100 km · échéance 25 nov. 2026 · 3 participant(s)</p>
+          </div>
+          <div class="flex gap-2 shrink-0">
+                    <a href="defi-details.html" class="border border-gray-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Ouvrir</a>
+                    <a href="defi-modifier.html" class="border border-gray-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Modifier</a>
+                    <button class="border border-red-200 text-red-600 text-sm font-medium px-3 py-2 rounded-lg hover:bg-red-50">Supprimer</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+
+
+
+  </main>
+</body>
+</html>
