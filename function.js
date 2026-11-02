@@ -1,7 +1,7 @@
 function afficherClass(participants, id) {
     const elementid = document.getElementById(id);
     elementid.innerHTML = "";
-    participants.forEach((participants, index) => {
+     participants.forEach((participants, index) => {
         elementid.innerHTML += `
         <div class="flex items-center justify-between px-4 py-3 rounded-md border border-gray-200">
               <div class="flex items-center gap-3">
