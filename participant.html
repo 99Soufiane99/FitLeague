@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>participant</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="flex justify-between items-center p-4 bg-white">
+        <a href="dashboard.html" class="flex items-end gap-1" >
+            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
+            <span class="flex font-bold text-xl">itLeague</span>
+        </a>
+        <nav class="flex gap-20">
+         <a class="hover:text-green-800" href="dashboard.html" >Dashboard</a>
+        <a class="hover:text-green-800" href="defi.html">defi</a>
+        <a class="hover:text-green-800" href="participant.html">participant</a>
+        </nav>
+        <button class="flex rounded-[10px] bg-green-700 h-10 w-40 items-center justify-center text-white font-bold">+ Créer un défi</button>
+    </header>
+    <main>
+        <section>
+            <h2 class="font-bold text-4xl p-5">Participants</h2>
+            <p class="p-5 text-gray-700">Gère la liste des membres du groupe.</p>
+                <div class="p-10">
+                    <article class="bg-white border border-gray-200 rounded-xl p-3">
+        <div class="flex justify-between items-start flex-wrap gap-3">
+        <div>
+        <div class="flex items-center gap-2 mb-1 flex-wrap">
+                    <a href="defi-details.html" class="font-bold text-lg hover:underline">example name</a>
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-700">Yoga</span>
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">actif</span>
+            </div>
+            <p class="text-sm text-gray-500">Une séance de yoga par jour pendant 21 jours pour tenir une routine.</p>
+            <p class="text-sm text-gray-500 mt-1">Objectif : 21 séances · échéance 07 nov. 2026 · 5 participant(s)</p>
+          </div>
+            <div class="flex gap-2 shrink-0">
+                <a href="defi-details.html" class="border border-gray-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Ouvrir</a>
+                <a href="defi-modifier.html" class="border border-gray-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Modifier</a>
+                <button class="border border-red-200 text-red-600 text-sm font-medium px-3 py-2 rounded-lg hover:bg-red-50">Supprimer</button>
+            </div>
+            </div>
+      </article>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
