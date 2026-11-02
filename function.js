@@ -13,20 +13,67 @@ function afficherClass(participants, id) {
         `
     })
 }
-
-function aficherparticipants(participants, id) {
-    let element = document.getElementById(id);
-    element.innerHTML = "";
-    participants.forEach((participants, index) => {
-        element.innerHTML += `
-                             <div class="flex justify-between items-center py-3 text-sm">
-                                    <span>${participants.name}</span>
-                                    <button class="text-gray-500">Retirer</button>
-                                    </div>
-        `
+function supprimerDefis(){
+    let btnSupprimer=document.querySelectorAll(".btn-supprimer")
+    btnSupprimer.forEach(btn=>{
+        let id=Number(btn.dataset.id)
+        btn.addEventListener("click",()=>{
+            if(confirm("vous conferme pour supprimer ce defis?")){
+                challenges=challenges.filter(d=>d.id!==id)
+                affichageDefis()
+            }
+        })
     })
+};
+
+function modifierDefis() {
+
+    let btnModifier = document.querySelectorAll(".btn-modifier");
+
+    btnModifier.forEach(btn => {
+
+        btn.addEventListener("click", function() {
+
+            let id = Number(btn.dataset.id);
+
+            let defi = challenges.find(d => d.id === id);
+
+            if (defi) {
+
+                defi.title = "Nouveau défi sportif";
+                defi.sport = "Musculation";
+                defi.description = "Réaliser 1000 pompes progressivement.";
+                defi.objective = 1000;
+                defi.unit = "répétitions";
+                defi.deadline = "2026-12-30";
+                defi.status = "active";
+
+                affichageDefis();
+            }
+
+        });
+
+    })};
+
+function ajouterDefis() {
+
+    let nvDefis = {
+        id: 6,
+        title: "500 pompes",
+        sport: "Musculation",
+        description: "Réaliser 500 pompes progressivement pendant le mois.",
+        objective: 500,
+        unit: "répétitions",
+        deadline: "2026-12-15",
+        status: "active",
+        participants: [3, 4, 5]
+    };
+
+    challenges.push(nvDefis);
+
+    affichageDefis();
 }
-
-
-afficherClass(participants, "classment-defi")
-aficherparticipants(participants, "participantlist")
+affichageDefis()
+ajouterDefis()
+supprimerDefis()
+modifierDefis()
