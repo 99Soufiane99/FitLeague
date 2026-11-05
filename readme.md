@@ -58,7 +58,7 @@ FitLeague/
 1. Cloner le projet :
 
 ```bash
-git clone URL_DU_REPOSITORY
+git clone https://github.com/99Soufiane99/FitLeague.git
 ```
 
 2. Entrer dans le dossier :
