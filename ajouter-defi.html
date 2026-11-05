@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajouter defi</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header class="flex justify-between items-center p-4 bg-white">
+        <a href="dashboard.html" class="flex items-end gap-1" >
+            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
+            <span class="flex font-bold text-xl">itLeague</span>
+        </a>
+        <nav class="flex gap-20">
+         <a class="hover:text-green-800" href="dashboard.html" >Dashboard</a>
+        <a class="hover:text-green-800" href="defi.html">Defis</a>
+        <a class="hover:text-green-800" href="participant.html">participant.html</a>
+        </nav>
+        <a href="index.html" class="flex rounded-[10px] bg-green-700 h-10 w-40 items-center justify-center text-white font-bold">Accueil</a>
+    </header>
+    <main>
+        <h1 class="text-2xl font-bold md-2">Creer un defi</h1>
+        <p class="text-gray-500 md-6">Remplis les informations de ton defi</p>
+        <form id="form-defi" class="bg-white p-6 rounded-xl space-y-4">
+            <div>
+                <label class="block font-semibold md-1" for="title">Title</label>
+                <input type="text" id="titre" required
+                    placeholder="Nom du défi"
+                    class="w-full border rounded-lg p-3 outline-green-700">
+            </div>
+            <div>
+                <label class="block font-semibold mb-1" for="sport">Sport</label>
+                <input type="text" id="sport" required
+                    placeholder="Ex : Course"
+                    class="w-full border rounded-lg p-3 outline-green-700">
+            </div>
+            <div>
+                <label class="block font-semibold mb-1" for="description">Description</label>
+                <textarea id="description" required
+                    placeholder="Description du défi"
+                    class="w-full border rounded-lg p-3 outline-green-700"></textarea>
+
+            </div>
+                    <div>
+                        <label class="block font-semibold mb-1" for="objectif">Objectif</label>
+                        <input type="number" id="objectif" min="1" required
+                    placeholder="Ex : 50"
+                    class="w-full border rounded-lg p-3 outline-green-700">
+
+                    </div>
+                        <div>
+                            <label class="block font-semibold mb-1" for="unite">Unité</label>
+                <input type="text" id="unite" required
+                    placeholder="Ex : km"
+                    class="w-full border rounded-lg p-3 outline-green-700">
+                        </div>
+                        <div>
+                            <label class="block font-semibold md-1" for="data-limite">Data limite</label>
+                            <input type="data" id="data-limite" required
+                            class="w-full border rounded-lg p-3 outline-green-700">
+                        </div>
+                                <div class="flex justify-end gap-3 pt-3">
+                                    <a href="dashboard.html" class="px-5 py-2 rounded-lg border text-gray-600">Annuler</a>
+
+                                    <button class="px-5 py-2 rounded-lg bg-green-700 text-white font-bold">Ajouter</button>
+
+                                </div>
+        </form>
+    </main>
+<footer class="min-h-[200px] p-10 flex justify-between" >
+             <div class="logo-foot">
+                       <a href="index.html" class="flex items-end gap-1" >
+            <span class="flex rounded-[10px] items-center justify-center h-10 w-10 bg-green-700 text-white font-bold text-4xl">F</span>
+            <span class="flex font-bold text-xl">itLeague</span>
+        </a>
+             </div>
+
+             <div class=" flex gap-120">
+                <p>Le plaisir de progresser ensemble.</p>
+               
+             </div>
+             <div>
+                <p>© 2026 FitLeague</p>
+             </div>
+        </footer>
+</body>
+</html>

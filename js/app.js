@@ -115,7 +115,3 @@ function affichageTop3(){
 afficheStatique()
 defiSection()
 affichageTop3()
-// let challenges=challenges.find(challenge=>{
-//    return  challenge.id===3
-// })
-// console.log(challenges)
