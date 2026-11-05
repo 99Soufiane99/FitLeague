@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+
+        <form id="form" class="bg-white w-full max-w-md p-8 rounded-2xl shadow-lg">
+    
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+                Ajouter un participant
+            </h2>
+    
+            <p class="text-gray-500 text-sm mb-6">
+                Créez un nouveau compte participant
+            </p>
+    
+            <!-- Name -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2">
+                    Nom complet
+                </label>
+    
+                <input 
+                    type="text"
+                    id="name"
+                    data-id="username"
+                    placeholder="Ex: Oussama Amrani"
+                   
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                >
+                <small class="text-red-500"></small>
+            </div>
+    
+            <!-- Pseudo -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-medium mb-2">
+                    Pseudo
+                </label>
+    
+                <input 
+                    type="text"
+                    data-id="pseudo"
+                    placeholder="Ex: Oussama123"
+                    id="pseudo"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                >
+                <small class="text-red-500"></small>
+            </div>
+            <!-- email -->
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2">
+                    email
+                </label>
+                <input 
+                    type="text" 
+                    data-id="email"
+                    id="email"
+                    placeholder="Ex: Oussama@gmail.com" 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                >
+                <small class="text-red-500"></small>
+            </div>
+            <!-- Password -->
+            <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2">
+                    Mot de passe
+                </label>
+    
+                <input 
+                   
+                    type="password"
+                    data-id="password"
+                     id="pass"
+                    placeholder="Entrez votre mot de passe"
+                   
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                >
+                <small class="text-red-500"></small>
+            </div>
+          
+    
+    
+            <!-- Buttons -->
+            <div class="flex gap-3">
+    
+                <button 
+                    type="submit"
+                    class="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                    Ajouter
+                </button>
+    
+                <button 
+                    type="reset"
+                    class="px-5 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
+                    Annuler
+                </button>
+    
+            </div>
+    
+        </form>
+    
+    </div>
+    <script src="formuler.js"></script>
+</body>
+</html>

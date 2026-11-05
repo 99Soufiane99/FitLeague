@@ -71,10 +71,12 @@ function affichageDefis() {
 function supprimerDefis(){
     let btnSupprimer=document.querySelectorAll(".btn-supprimer")
     btnSupprimer.forEach(btn=>{
-        let id=Number(btn.dataset.id)
-        btn.addEventListener("click",()=>{
-            if(confirm("vous conferme pour supprimer ce defis?")){
-                challenges=challenges.filter(d=>d.id!==id)
+        
+        btn.addEventListener("click",()=>{let id=Number(btn.dataset.id)
+            let elementSupprimer=challenges.findIndex(c=>c.id=id)
+            if(confirm("vous conferme pour supprimer ce defis?")&&elementSupprimer>-1){
+                challenges.splice(elementSupprimer,1)
+                // challenges=challenges.splice((c=>c.id===id),1)    
                 affichageDefis()
             }
         })
@@ -86,13 +88,9 @@ function modifierDefis() {
     let btnModifier = document.querySelectorAll(".btn-modifier");
 
     btnModifier.forEach(btn => {
-
         btn.addEventListener("click", function() {
-
             let id = Number(btn.dataset.id);
-
             let defi = challenges.find(d => d.id === id);
-
             if (defi) {
 
                 defi.title = "Nouveau défi sportif";
@@ -125,7 +123,6 @@ function ajouterDefis() {
     };
 
     challenges.push(nvDefis);
-
     affichageDefis();
 }
 affichageDefis()
